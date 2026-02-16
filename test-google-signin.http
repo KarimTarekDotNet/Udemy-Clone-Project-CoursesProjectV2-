@@ -1,0 +1,63 @@
+### Test Google Sign-In Endpoint
+
+# Test 1: Valid request with Student role
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5N2Y0YWQzYjZmNDU4OGJhMDZkYzBhZGY5ZGJiOGE2NmQwMWE5YzQiLCJ0eXAiOiJKV1QifQ.test",
+  "role": "Student"
+}
+
+###
+
+# Test 2: Valid request with Instructor role
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5N2Y0YWQzYjZmNDU4OGJhMDZkYzBhZGY5ZGJiOGE2NmQwMWE5YzQiLCJ0eXAiOiJKV1QifQ.test",
+  "role": "Instructor"
+}
+
+###
+
+# Test 3: Valid request without role (should default to Student)
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5N2Y0YWQzYjZmNDU4OGJhMDZkYzBhZGY5ZGJiOGE2NmQwMWE5YzQiLCJ0eXAiOiJKV1QifQ.test"
+}
+
+###
+
+# Test 4: Invalid role (should fail validation)
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5N2Y0YWQzYjZmNDU4OGJhMDZkYzBhZGY5ZGJiOGE2NmQwMWE5YzQiLCJ0eXAiOiJKV1QifQ.test",
+  "role": "Admin"
+}
+
+###
+
+# Test 5: Missing idToken (should fail validation)
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "role": "Student"
+}
+
+###
+
+# Test 6: Case sensitivity test - lowercase
+POST https://localhost:7178/api/auth/google-signin
+Content-Type: application/json
+
+{
+  "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5N2Y0YWQzYjZmNDU4OGJhMDZkYzBhZGY5ZGJiOGE2NmQwMWE5YzQiLCJ0eXAiOiJKV1QifQ.test",
+  "role": "student"
+}

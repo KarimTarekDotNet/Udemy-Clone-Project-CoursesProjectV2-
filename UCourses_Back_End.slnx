@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="UCourses_Back_End.Api/UCourses_Back_End.Api.csproj" />
+  <Project Path="UCourses_Back_End.Core/UCourses_Back_End.Core.csproj" />
+  <Project Path="UCourses_Back_End.Infrastructure/UCourses_Back_End.Infrastructure.csproj" />
+</Solution>

@@ -1,0 +1,6 @@
+@UCourses_Back_End.Api_HostAddress = http://localhost:5287
+
+GET {{UCourses_Back_End.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
