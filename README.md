@@ -250,8 +250,6 @@ CORS is configured to allow requests from the frontend.
 
 - **Swagger UI**: Available at `/swagger`
 - **OpenAPI Spec**: Available at `/openapi/v1.json`
-- **Complete Feature Guide**: [BACKEND_FEATURES_PROMPT.md](BACKEND_FEATURES_PROMPT.md)
-- **Endpoints Reference**: [API_ENDPOINTS.md](API_ENDPOINTS.md)
 
 ---
 
@@ -303,12 +301,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👨‍💻 Authors
-
-- **Your Name** - *Initial work*
-
----
-
 ## 🙏 Acknowledgments
 
 - ASP.NET Core Team
@@ -332,6 +324,3 @@ For issues, questions, or contributions:
 
 🚧 **Active Development** - This project is currently under active development.
 
----
-
-**Last Updated**: February 16, 2026
