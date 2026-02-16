@@ -147,8 +147,6 @@ https://localhost:7178/swagger
 - `/api/instructor` - Instructor dashboard (Instructor only)
 - `/api/student` - Student dashboard (Student only)
 
-For complete API documentation, see [BACKEND_FEATURES_PROMPT.md](BACKEND_FEATURES_PROMPT.md)
-
 ---
 
 ## 🔐 Configuration
